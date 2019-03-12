@@ -4,14 +4,13 @@
 
 const path = require('path')
 
-let rootPath = '/'    //项目根路径
+let rootPath = '/show/'    //项目根路径
 rootPath = rootPath.trim();
 if(/[^/]$/.test(rootPath)) {
   rootPath += '/';
 }
 
-const outputPath = '/dist/' + rootPath.split('/').slice(-2,-1) + '/'
-console.log('outputPath-->' + outputPath)
+console.log('outputPath-->' +path.resolve(__dirname, '../dist'))
 module.exports = {
   rootPath: rootPath,
   dev: {
@@ -47,10 +46,10 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '..' + outputPath + 'index.html'),
+    index: path.resolve(__dirname, '../dist/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '..' + outputPath.slice(0, outputPath.length - 1)),
+    assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: rootPath,
 

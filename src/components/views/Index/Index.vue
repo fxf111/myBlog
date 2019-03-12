@@ -1,6 +1,6 @@
 <template>
     <el-container>
-      <el-aside width="200px">Aside</el-aside>
+      <LeftAside/>
       <el-container>
         <el-main>Main</el-main>
         <el-footer>Footer</el-footer>
@@ -9,10 +9,15 @@
 </template>
 
 <script>
+import LeftAside from 'cmp/common/Aside/Aside.vue'
+
 export default {
   data () {
     return {
     }
+  },
+  components: {
+    LeftAside
   }
 }
 </script>
