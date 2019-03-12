@@ -1,12 +1,10 @@
 <template>
-  <div id="app">
-    <el-container>
-      <el-header>Header</el-header>
-      <router-view/>
-      
+  <el-container>
+    <el-header>Header</el-header>
+    <router-view/>
+    
 
-    </el-container>
-  </div>
+  </el-container>
 </template>
 
 <script>
