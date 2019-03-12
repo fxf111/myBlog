@@ -2,8 +2,6 @@
   <el-container>
     <el-header>Header</el-header>
     <router-view/>
-    
-
   </el-container>
 </template>
 
