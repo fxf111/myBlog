@@ -1,6 +1,6 @@
 <template>
     <el-aside width="200px">
-        
+        <user-profile/>
     </el-aside>
 </template>
 

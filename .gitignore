@@ -2,6 +2,7 @@
 node_modules/
 /dist/
 /dist-delta/
+/dist-delta/*
 /dist-bak/
 /dist-backup/
 npm-debug.log*
