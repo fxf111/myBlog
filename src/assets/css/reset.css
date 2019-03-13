@@ -24,6 +24,8 @@ html,
 body {
     font: 15px/20px "Microsoft YaHei", "SimSun", "Arial Narrow", HELVETICA, "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
     color: #5b5f65;
+    width: 100%;
+    height: 100%;
 }
 
 a {
@@ -138,4 +140,23 @@ table {
 .show-action .el-input__inner, .show-action .el-input.is-disabled .el-input__inner {
     background: transparent;
     color: #fff;
+}
+.aside-title {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+.left-aside-item {
+    padding: 0 10px;
+    font-size: 16px;
+}
+button.btn {
+    background: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: #5b5f65;
+}
+.btn:hover {
+    background: rgba(0,0,0,0.1);
 }

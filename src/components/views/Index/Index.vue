@@ -2,7 +2,9 @@
     <el-container>
       <LeftAside/>
       <el-container>
-        <el-main>Main</el-main>
+        <el-main>
+          <main-content/>
+        </el-main>
         <el-footer>Footer</el-footer>
       </el-container>
     </el-container>
@@ -10,19 +12,20 @@
 
 <script>
 import LeftAside from 'cmp/common/Aside/Aside.vue'
-
+import MainContent from 'cmp/common/MainContent.vue'
 export default {
   data () {
     return {
     }
   },
   components: {
-    LeftAside
+    LeftAside,
+    MainContent
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang=less scoped>
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="wrap">
     <el-header>Header</el-header>
     <router-view/>
   </el-container>
@@ -12,5 +12,10 @@ export default {
 </script>
 
 <style>
-
+  html,body {
+    height: 100%;
+  }
+  .wrap {
+    height: 100%;
+  }
 </style>
